@@ -114,7 +114,6 @@ resource "site24x7_monitor_group" "monitor_group_us" {
 }
 
 resource "site24x7_url_action" "action_us" {
-  depends_on = ["aws_instance.t2_micro_instance"]
   // (Required) Display name for the action.
   name = "Vtitan Action"
 
@@ -191,9 +190,14 @@ releases][go_releases] page for more details.
 
 ## Contributing
 
-Provide details about how people can contribute to your project. If you have a contributing guide, mention it here. e.g.:
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-We encourage public contributions! Please review [CONTRIBUTING.md](docs/CONTRIBUTING.md) for details on our code of conduct and development process.
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
 
 ## License
 
@@ -204,7 +208,10 @@ This project is licensed under the MIT License - see [LICENSE.md](LICENSE.md) fi
 
 ## Acknowledgments
 
-Provide proper credits, shout-outs, and honorable mentions here. Also provide links to relevant repositories, blog posts, or contributors worth mentioning.
+The Site24x7 Terraform Provider uses code from the following library:
+
+ * [Bonial.com](https://github.com/Bonial-International-GmbH), MIT License
+
 
 
 
